@@ -1,3 +1,218 @@
 body {
+  background-color: white;
+  font-family: monospace;
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+.generateSort {
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: #e1e2e3;
+}
+.nextStep {
+  display: block;
+  padding-right: 51px;
+  padding-left: 51px;
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: #e1e2e3;
+}
+
+.visualizeSort {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 800px;
+  height: 400px;
   background-color: #55b491;
+  border: solid 1px black;
+  border-radius: 3px;
+}
+.visualizeSort > div {
+  font-size: 80px;
+  animation: 800ms fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.visualizeSort > div:nth-child(1) {
+  display: block;
+  position: absolute;
+  min-width: 200px;
+  width: 265px;
+  min-height: 200px;
+  font-size: 30px;
+  background-color: transparent;
+  padding-top: 0px;
+  border-top-width: 0px;
+  margin-top: 200px;
+  height: 200px;
+}
+
+.visualizeSort > div:nth-child(1) > div {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 10px;
+  min-width: 50px;
+  width: 50px;
+  font-size: 40px;
+  height: 50px;
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(2) {
+  display: block;
+  position: absolute;
+  min-width: 200px;
+  width: 265px;
+  font-size: 30px;
+  min-height: 200px;
+  background-color: transparent;
+  padding-top: 0px;
+  margin-left: 530px;
+  border-top-width: 0px;
+  margin-top: 200px;
+  height: 200px;
+}
+
+.visualizeSort > div:nth-child(2) > div {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 10px;
+  min-width: 50px;
+  width: 50px;
+  font-size: 40px;
+  height: 50px;
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(3) {
+  display: block;
+  position: absolute;
+  min-width: 200px;
+  width: 265px;
+  min-height: 200px;
+  font-size: 30px;
+  background-color: transparent;
+  /* border-left: 3px solid black;
+  border-right: 3px solid black; */
+  padding-top: 0px;
+  margin-left: 265px;
+  border-top-width: 0px;
+  margin-top: 200px;
+  height: 200px;
+}
+
+.visualizeSort > div:nth-child(3) > div {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 10px;
+  min-width: 50px;
+  width: 50px;
+  font-size: 40px;
+  height: 50px;
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(4) {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 10px;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(5) {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(6) {
+  display: inline-block;
+  min-width: 100px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(7) {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.visualizeSort > div:nth-child(8) {
+  display: inline-block;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+}
+.blockPivot {
+  border: 3px solid blue !important;
+}
+.arrow {
+  border-right: 3px solid #aaa;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 150px;
+}
+
+.arrow:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #aaa;
+  position: absolute;
+  top: -8px;
+  left: -9px;
 }
